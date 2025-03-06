@@ -210,6 +210,11 @@
 
         }
 
+        footer{
+            height: 10px;
+            width: 100vw;
+            align-items: center;
+        }
 
         @media all and (max-width: 800px) and
         (min-width: 500px){
@@ -307,7 +312,28 @@
     <span class="contact-header" id="contacts">Contacts</span>
 </header>
 
-<section></section>
+<section>
+    <form>
+        <div>
+            <label>Name</label>
+            <input type="text"  placeholder="input name">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="text" id="email" placeholder="input email">
+        </div>
+        <br>
+        <div>
+            <label>Description</label><br>
+            <textarea   placeholder="write..."  rows="8" cols="50"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+</section>
 
 <footer>
     <h6>All Right Reserved @SaFer / copyright@SaFer</h6>
