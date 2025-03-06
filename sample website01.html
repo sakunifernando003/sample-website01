@@ -11,8 +11,8 @@
         body>header{
             height: 50px;
             width: 100vw;
-            background-color: rgba(122, 122, 122, 0.86);
-            border:3px solid rgb(255, 255, 255);
+            background-color: black;
+            border:3px solid rgb(0, 228, 250);
             position: sticky;
             top: 0;
             display: flex;
@@ -28,7 +28,7 @@
         }
 
         .nav{
-            color: rgba(47, 49, 49, 0.96);
+            color: beige;
             font-size: 18px;
             font-weight: bold;
             align-items: center;
@@ -44,8 +44,29 @@
           align-content: center;
 
         }
-      button{
+      #menubtn{
           display: none;
+      }
+      button{
+          display: block;
+         background-color: #0ecfd3;
+          font-weight: bold;
+          color: black;
+          position: absolute ;
+          width: 150px;
+          height: 30px;
+          /*right:50px;*/
+          /*!*!*top: 30px;*!*!*/
+          /*!*margin: 0;*!*/
+          border: 2px solid #ffffff;
+          border-bottom-left-radius: 30%;
+          border-top-right-radius: 30%;
+
+
+      }
+      button:hover{
+          color: beige;
+          background-color: navy;
       }
 
       section{
@@ -66,7 +87,7 @@
       }
       #desc{
           font-size: 40px;
-          color:whitesmoke;
+          color: #0ecfd3;
           align-content: center;
           text-align: center;
       }
@@ -76,7 +97,7 @@
           right:50px;
           top: 30px;
           margin: 0;
-          border: 2px solid #ffffff;
+          border: 2px solid #00e4fa;
 
 
       }
@@ -117,7 +138,7 @@
       }
 
         .service-section>div{
-            border: 1px solid navy;
+            border: 2px solid #0ecfd3;
             background-color: whitesmoke;
             margin: 10px;
             width: 250px;
@@ -125,6 +146,13 @@
 
 
         }
+
+        .service-section>div:hover{
+            background-color: #00eaff;
+
+        }
+
+
         .awards-header{
             color: white;
             position: sticky;
@@ -140,16 +168,23 @@
 
         }
         .award-section{
-            width: 100vw;
-            height: 40vw;
+            border: 8px;
             display: grid;
-            border: 2px white;
-            background-color: black;
             grid-template-columns: repeat(2,1fr);
             position: relative;
         }
 
-        #awradimage{
+        .award-section>div{
+
+            margin: 5px;
+
+
+        }
+
+        .awardpara{
+            color: whitesmoke;
+        }
+        .awardimg{
             width: 200px;
             height: 200px;
             position: absolute ;
@@ -159,6 +194,7 @@
             border: 2px solid #ffffff;
 
         }
+
         .contact-header{
             color: white;
             position: sticky;
@@ -203,7 +239,7 @@
         <a href="#contacts" class="nav">Contact</a>
     </nav>
     </div>
-    <button class="button">menu</button>
+    <span><button id="menubtn">menu</button></span>
 </header>
 
 <section class="hero-section">
@@ -211,7 +247,7 @@
         <h1 id="name">Jenne Gorgia</h1>
         <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum cumque dignissimos, doloremque dolores ducimus eligendi fugiat hic ipsam iste magni minus neque nihil odit, officiis omnis repellat repudiandae voluptatum!</p>
         <h2 id="desc">Full-stack developer</h2>
-        <button>explore</button>
+        <button id="explorebtn">explore</button>
     </div>
 
     <div>
@@ -250,10 +286,20 @@
 </header>
 <section class="award-section">
     <div>
-        <img src="assests/images/serene-autumn-evening-stockcake.jpg" id="awradimage">
+        <img src="assests/images/award1.png" class="awardimg">
+    </div>
+
+    <div>
+        <p class="awardpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur debitis ducimus, enim eos excepturi facilis itaque iure labore nemo nesciunt nobis nostrum, pariatur provident quaerat, sed sequi soluta sunt!</p>
+    </div>
+
+    <div>
+        <img src="assests/images/award1.png" class="awardimg">
+
     </div>
     <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur debitis ducimus, enim eos excepturi facilis itaque iure labore nemo nesciunt nobis nostrum, pariatur provident quaerat, sed sequi soluta sunt!</p>
+        <p class="awardpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet atque dolores ea explicabo illum ipsum laudantium libero mollitia nam non officia, officiis praesentium ratione sapiente sed, tempore ullam voluptatem!</p>
+        <p class="awardpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad at, debitis explicabo facilis ipsum iusto nobis numquam optio vel. Architecto consequuntur dolorum modi veniam vitae! Eius nemo pariatur sunt.</p>
     </div>
 </section>
 
@@ -262,6 +308,10 @@
 </header>
 
 <section></section>
+
+<footer>
+    <h6>All Right Reserved @SaFer / copyright@SaFer</h6>
+</footer>
 
 <script src="lib/fontawesome-free-6.7.2-web/js/all.js"></script>
 </body>
