@@ -59,8 +59,7 @@
           /*!*!*top: 30px;*!*!*/
           /*!*margin: 0;*!*/
           border: 2px solid #ffffff;
-          border-bottom-left-radius: 30%;
-          border-top-right-radius: 30%;
+          border-radius: 20px 20px 20px 20px;
 
 
       }
@@ -209,6 +208,26 @@
 
 
         }
+        #contact-section{
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            min-height: 100vh; /* Make the section take the full viewport height */
+            background-color: black; /* Optional background color */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.37); /* Optional form background */
+            padding: 20px; /* Add padding around the form */
+            border-radius: 10px; /* Optional rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+
+        }
+
+        .lbl{
+            color: #00e4fa;
+            font-weight: bold;
+        }
 
         footer{
             height: 10px;
@@ -312,20 +331,20 @@
     <span class="contact-header" id="contacts">Contacts</span>
 </header>
 
-<section>
+<section id="contact-section">
     <form>
         <div>
-            <label>Name</label>
+            <label class="lbl">Name</label>
             <input type="text"  placeholder="input name">
         </div>
         <br>
         <div>
-            <label>Email</label>
+            <label class="lbl">Email</label>
             <input type="text" id="email" placeholder="input email">
         </div>
         <br>
         <div>
-            <label>Description</label><br>
+            <label class="lbl">Description</label><br>
             <textarea   placeholder="write..."  rows="8" cols="50"></textarea>
         </div>
 
